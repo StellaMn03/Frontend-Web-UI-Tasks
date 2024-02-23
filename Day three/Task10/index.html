@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Color on Hover</title>
+<style>
+  .list-item {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .list-item:hover {
+    color: rgb(191, 130, 213);
+  }
+  
+</style>
+</head>
+<body>
+
+<ul id="item-list">
+  <li class="list-item" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Item 1</li>
+  <li class="list-item" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Item 2</li>
+  <li class="list-item" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Item 3</li>
+</ul>
+
+<script>
+function changeColor(element) {
+    element.style.color = 'purple';
+}
+
+function resetColor(element) {
+    element.style.color = 'black';
+}
+</script>
+
+</body>
+</html>
