@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Goodbye Button</title>
+<style>
+    #helloButton {
+        padding: 20px 30px;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        
+        
+    }
+</style>
+</head>
+<body>
+
+<button id="helloButton" onclick="changeText()">Hello</button>
+
+<script>
+function changeText() {
+    var button = document.getElementById("helloButton");
+    if (button.innerHTML === "Hello") {
+        button.innerHTML = "Goodbye";
+    } else {
+        button.innerHTML = "Hello";
+    }
+}
+</script>
+
+</body>
+</html>
