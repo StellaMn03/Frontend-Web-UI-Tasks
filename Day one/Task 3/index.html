@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Div</title>
+  <style>
+    /* Initially hide the div */
+    #content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="toggleVisibility()">SHOW/HIDE</button>
+   <div id="text">   
+         wooow   
+   </div>
+
+    <script>
+     function toggleVisibility() {
+      var contentDiv = document.getElementById('text'); 
+      if (contentDiv.style.display === 'none') {   //եթե տենում ա ցույց չի տալիս       
+         contentDiv.style.display = 'block';    //բլոկ ա դնում որ ցույց տա
+      } else {
+        contentDiv.style.display = 'none';   //display֊ը none-ա դնում,որ ցույց չտա
+      }
+     }
+    </script>
+</body>
+</html>s
