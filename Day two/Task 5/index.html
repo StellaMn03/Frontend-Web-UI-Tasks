@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Buttons</title>
+<style>
+    .colorButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<button class="colorButton" style="background-color: rgb(210, 113, 113);" onclick="changeColor('rgb(210, 113, 113)')">red</button>
+<button class="colorButton" style="background-color: rgb(74, 151, 224);" onclick="changeColor('rgb(74, 151, 224)')">Blue</button>
+<button class="colorButton" style="background-color: rgb(140, 228, 140);" onclick="changeColor('rgb(140, 228, 140)')">Green</button>
+<button class="colorButton" style="background-color: rgb(219, 219, 125);" onclick="changeColor('rgb(219, 219, 125)')">Yellow</button>
+<button class="colorButton" style="background-color: rgb(248, 199, 108);" onclick="changeColor('rgb(248, 199, 108)')">Orange</button>
+
+<script>
+function changeColor(color) {
+    document.body.style.backgroundColor = color;
+}
+</script>
+
+</body>
+</html>
