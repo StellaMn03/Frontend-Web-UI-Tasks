@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Counter</title>
+<style>
+#click_Count {
+    text-align: center;
+}
+#button {
+    display: block;
+    margin:0  auto;
+}
+</style>
+<script>
+    let clickCount = 0;
+
+    function incrementCount() {
+        clickCount++;
+        document.getElementById("click_Count").textContent = "Button clicked " + clickCount + " times.";
+    }
+</script>
+</head>
+<body>
+
+<button id = "button" onclick="incrementCount()">Click me</button>
+<div id="click_Count">Button clicked 0 times.</div>
+
+</body>
+</style>
+</html>
