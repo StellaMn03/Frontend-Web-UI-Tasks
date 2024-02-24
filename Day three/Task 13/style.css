@@ -1,0 +1,26 @@
+.tabs {
+    display: flex;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+body {
+    background-color: rgb(241, 190, 123);
+}
+#tab1 {
+    background-color: rgb(206, 199, 120);
+}
+#tab2 {
+    background-color: rgb(170, 117, 165);
+}
+#tab3 {
+    background-color: rgb(87, 132, 138);
+}
