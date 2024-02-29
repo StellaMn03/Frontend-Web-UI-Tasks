@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+header {
+  background-color: #6b8165;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #F8F1F1;
+  font-size: 1.5rem;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation li {
+  margin-right: 20px;
+}
+.navigation a {  
+  color: #201919;
+  font-weight: bold;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+}/* }  գծերն ա ավելացնում */
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #f0ecec;
+  margin: 5px 0;
+  display: block;
+} 
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #636e53;
+  }
+  .navigation.show {
+    display: flex;
+  }
+  .navigation li {
+    margin: 0;
+    text-align: center;
+  }
+}
