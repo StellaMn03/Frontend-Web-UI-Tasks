@@ -24,7 +24,7 @@ body {
   }
   
   .input-group input {
-    width: 81%;
+    width: 94%;
     padding: 10px;
     border-radius: 7px;
     border: 1px solid #dad5d5;
@@ -32,7 +32,7 @@ body {
   
   .btn {
     display: block;
-    width: 88%;
+    width: 100%;
     padding: 10px;
     background-color: #40b952;
     color: #fff;
@@ -40,6 +40,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+  
   
   .btn:hover {
     background-color: #45c971;
